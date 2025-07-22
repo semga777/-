@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="website icon" type="png"
+     href="img/g.png">
+    <style>
+        :root {
+            --main-color: #f66d52;
+            --secondary-color: #333;
+        }
+        
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+        }
+        
+       
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .nav-link {
+            color: var(--main-color) !important; 
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1em;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+        
+        
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        
+        .carousel-caption {
+            bottom: 30%;
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 0;
+            animation: fadeIn ease-in 1;
+            animation-fill-mode: forwards;
+            animation-duration: 0.8s;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+       
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .accordio {
+            margin-top: 50px;
+            font-size: 17px;
+            width: 100%;
+            max-width: 700px;
+        }
+        
+        
+        .services-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .card {
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-img-top {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+            margin: 20px auto;
+        }
+        
+        .order-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .order-btn:hover {
+            background-color: #006699;
+            color: white;
+        }
+        
+       
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .telegram-link {
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .telegram-link:hover {
+            text-decoration: underline;
+        }
+        
+        
+        @media (max-width: 1199px) {
+            .navbar-nav {
+                margin-left: auto;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .carousel-caption {
+                font-size: 1.5rem;
+                bottom: 25%;
+            }
+            
+            .about-section, .services-section {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+                padding-top: 70px;
+            }
+            
+            .header {
+                height: 70px;
+            }
+            
+            .navbar-brand img {
+                height: 40px;
+            }
+            
+            .carousel-item img {
+                height: 70vh;
+            }
+            
+            .carousel-caption {
+                font-size: 1.2rem;
+                bottom: 20%;
+            }
+            
+            .accordio {
+                width: 100%;
+                padding: 0 15px;
+            }
+            
+            .card-img-top {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .about-section, .services-section {
+                padding: 40px 0;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .carousel-caption {
+                font-size: 1rem;
+                bottom: 15%;
+            }
+            
+            .nav-link {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="header navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/g.png" alt="Логотип">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Главная">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#обомне">Обо мне</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Услуги">Услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="Главная">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/paris.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <p>Здравствуйте</p>
+                        <p>Я делаю сайты на заказ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="обомне" class="about-section">
+        <div class="container">
+            <h1 class="text-center mb-5">Обо мне</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Почему я делаю сайты?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Я делаю сайты потому что мне это интересно и планирую поступать на верстальщика в будущем и мне хотелось бы попроктиковаться в своих знаниях верстальщика.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Как меня зовут?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Меня зовут Семен, мне 14 лет. Я учусь делать простые сайта от 500 до 1500руб.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Как я делаю сайты?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Я беру готовую часть с bootstrap и редактирую до идеала, на пример как этот аккордеон, иногда приходится делать части сайта вручную.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4">На сколько я знаю:</h2>
+                    <div class="progress mb-3">
+                        <div class="progress-bar text-bg-success" style="width: 60%">HTML 60%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar text-bg-info" style="width: 34%">CSS 34%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar text-bg-warning" style="width: 5%">JS 5%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="Услуги" class="services-section">
+        <div class="container">
+            <h1 class="text-center mb-5" style="color: gray; font-size: 2.5rem; font-weight: 700;">Услуги</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/get-altay/813485/2a00000188193f0bd5557fee678bd0c95c4b/XXXL" class="card-img-top" alt="Лендинг">
+                        <div class="card-body">
+                            <h5 class="card-title">Лендинг</h5>
+                            <p class="card-text">Простой одностраничный сайт, с адаптивной версткой</p>
+                            <button class="order-btn" onclick="window.open('https://t.me/Gogogof1', '_blank')">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=174de9d674c418559a39fb34523967f5_l-10525373-images-thumbs&n=13" class="card-img-top" alt="Многостраничный сайт">
+                        <div class="card-body">
+                            <h5 class="card-title">Многостраничный сайт</h5>
+                            <p class="card-text">Сайт, например: кафе, магазин, который состоит из несколько страниц, с адаптивной версткой</p>
+                            <button class="order-btn" onclick="window.open('https://t.me/Gogogof1', '_blank')">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Мой сайт. Связь в Telegram: 
+                <a href="https://t.me/Gogogof1" class="telegram-link" target="_blank">@Gogogof1</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
